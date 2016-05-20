@@ -1,30 +1,28 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <type name="Magento\Framework\AppInterface">
-        <plugin name="Fruitcake\MagentoToolbar\Plugin\AddProfilerCollectorPlugin"
-                type="Fruitcake\MagentoToolbar\Plugin\AddProfilerCollectorPlugin"
-                sortOrder="0" />
+
         <plugin name="Fruitcake\MagentoToolbar\Plugin\AddLoggerCollectorPlugin"
                 type="Fruitcake\MagentoToolbar\Plugin\AddLoggerCollectorPlugin"
                 sortOrder="0" />
         <plugin name="Fruitcake\MagentoToolbar\Plugin\AddExceptionsCollectorPlugin"
                 type="Fruitcake\MagentoToolbar\Plugin\AddExceptionsCollectorPlugin"
                 sortOrder="0" />
-        <plugin name="Fruitcake\MagentoToolbar\Plugin\AddEventsCollectorPlugin"
+        <!--plugin name="Fruitcake\MagentoToolbar\Plugin\AddEventsCollectorPlugin"
                 type="Fruitcake\MagentoToolbar\Plugin\AddEventsCollectorPlugin"
                 sortOrder="0" />
         <plugin name="Fruitcake\MagentoToolbar\Plugin\AddProfilerCollectorPlugin"
                 type="Fruitcake\MagentoToolbar\Plugin\AddProfilerCollectorPlugin"
-                sortOrder="0" />
+                sortOrder="0" /!-->
         <plugin name="Fruitcake\MagentoToolbar\Plugin\AddRequestCollectorPlugin"
                 type="Fruitcake\MagentoToolbar\Plugin\AddRequestCollectorPlugin"
                 sortOrder="0" />
     </type>
 
-    <type name="Magento\Framework\Event\ManagerInterface">
+    <!--type name="Magento\Framework\Event\ManagerInterface">
         <plugin name="Fruitcake\MagentoToolbar\Plugin\CollectEventsPlugin"
                 type="Fruitcake\MagentoToolbar\Plugin\CollectEventsPlugin" sortOrder="1"/>
-    </type>
+    </type!-->
 
     <type name="Psr\Log\LoggerInterface">
         <plugin name="Fruitcake\MagentoToolbar\Plugin\CollectLoggerPlugin"
