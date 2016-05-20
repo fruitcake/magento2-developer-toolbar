@@ -1,0 +1,24 @@
+{
+  "name": "fruitcake/magento2-developer-toolbar",
+  "description": "Developer Toolbar for Magento 2",
+  "keywords": ["magento", "magento2", "profiler", "debugbar", "toolbar"],
+  "type": "magento2-module",
+  "authors": [
+    {
+      "name": "Barry vd. Heuvel",
+      "email": "barry@fruitcake.nl"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.9",
+    "magento-hackathon/magento2-toolbar": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "Fruitcake\\MagentoToolbar\\": ""
+    },
+    "files": [
+      "registration.php"
+    ]
+  }
+}
